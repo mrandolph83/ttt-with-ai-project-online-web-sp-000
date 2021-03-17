@@ -42,9 +42,9 @@ class MattSmithCLI_TTT
   def replay?
     puts "Would you like to play again? [Y/N]"
     input = gets.strip
-    if input == "Y"
+    if input.upcase == "Y"
       call
-    elsif input == "N"
+    elsif input.upcase == "N"
       exit
     else
       puts "Invalid entry, please try again."
