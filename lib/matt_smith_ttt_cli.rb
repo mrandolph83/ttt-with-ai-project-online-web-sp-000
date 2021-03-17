@@ -26,7 +26,7 @@ class MattSmithCLI_TTT
         Game.new(comp_one).play
       else
         puts "Invalid entry, please try again."
-        start_game
+        call
       end
     # binding.pry
 
@@ -34,7 +34,7 @@ class MattSmithCLI_TTT
         Game.new.play
       else
         puts "Invalid entry, please try again."
-      start_game
+      call
     end
     replay?
   end
