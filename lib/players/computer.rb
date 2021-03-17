@@ -24,14 +24,14 @@ module Players
       opponent_token
 
       if winning_play != nil
-        num = winning_play
+        board = winning_play
       elsif defense_play != nil
-        num = defense_play
+        board = defense_play
       else
-        num = free_play
+        board = free_play
       end
-        num += 1
-        return num.to_s
+        board += 1
+        return board.to_s
     end
   # binding.pry
 
