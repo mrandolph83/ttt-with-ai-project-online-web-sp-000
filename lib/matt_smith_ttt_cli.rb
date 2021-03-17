@@ -1,10 +1,8 @@
 require 'pry'
 class MattSmithCLI_TTT
 
-  def initialize
-  end
 
-  def start_game
+  def call
     comp_one = Players::Computer.new("X")
     comp_two = Players::Computer.new("O")
     human_one = Players::Human.new("X")
