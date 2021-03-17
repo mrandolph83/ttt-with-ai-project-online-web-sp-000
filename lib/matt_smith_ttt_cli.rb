@@ -14,15 +14,15 @@ class MattSmithCLI_TTT
     game_choice = gets.strip
 
     if game_choice == "0"
-      Game.new(computer_one, computer_two).play
+      Game.new(comp_one, comp_two).play
 
     elsif game_choice == "1"
       puts "Would you like to take the first turn? [Y/N]"
       input = gets.strip
 
-      if input == "Y"
+      if input.upcase == "Y"
         Game.new(human_one, comp_two).play
-      elsif input == "N"
+      elsif input.upcase == "N"
         Game.new(comp_one).play
       else
         puts "Invalid entry, please try again."
